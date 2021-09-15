@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
 
-class PageManager {
+class PageManagerSong {
   final progressNotifier = ValueNotifier<ProgressBarState>(
     ProgressBarState(
       current: Duration.zero,
@@ -12,9 +12,10 @@ class PageManager {
   final buttonNotifier = ValueNotifier<ButtonState>(ButtonState.paused);
 
   late AudioPlayer _audioPlayer;
-  static const url = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3';
+  static const url =
+      'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3';
 
-  PageManager() {
+  PageManagerSong() {
     _init();
   }
 
